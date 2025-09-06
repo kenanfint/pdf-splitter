@@ -1,0 +1,17 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Ignore PDFs (input and output)
+data/input_pdfs/
+data/output_pdfs/
+
+# Ignore OS/system files
+.DS_Store
+Thumbs.db
