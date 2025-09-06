@@ -10,7 +10,7 @@ This project provides a Python script to split a large PDF (such as a book, arti
 
 ## Project Structure
 ```
-📂 project-root
+📂 pdf-splitter
  ┣ 📂 data
  ┃ ┣ 📂 input_pdfs     # Place your original PDFs here
  ┃ ┗ 📂 output_pdfs    # Split PDFs will be saved here, in subfolders named after the original PDF
