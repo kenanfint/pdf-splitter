@@ -22,7 +22,7 @@ This project provides a Python script to split a large PDF (such as a book, arti
 
 ## Requirements
 - Python 3.8+
-- [PyPDF2](https://pypi.org/project/pypdf2/)
+- [PyPDF2]
 
 Install dependencies:
 ```bash
@@ -34,13 +34,13 @@ pip install PyPDF2
 2. Open `src/split_pdf.py` and edit the `ranges` list with the page intervals and names you want:
    ```python
    ranges = [
-       (1, 15, "nature_science"),
-       (16, 32, "math")
+       (1, 15, "summary"),
+       (16, 32, "chapter_1")
    ]
    ```
 3. Update the `input_pdf` variable with the file path of your PDF inside `data/input_pdfs`:
    ```python
-   input_pdf = os.path.join(input_folder, "prova-2dia.pdf")
+   input_pdf = os.path.join(input_folder, "my_book.pdf")
    ```
 4. Run the script:
    ```bash
@@ -48,17 +48,17 @@ pip install PyPDF2
    ```
 5. When the script finishes, it will ask:
    ```
-   Do you want to keep the original PDF '../data/input_pdfs/prova-2dia.pdf'? (y/n):
+   Do you want to keep the original PDF '../data/input_pdfs/my_book.pdf'? (y/n):
    ```
    - Type `y` to keep the original file.
    - Type `n` to delete it.
 
 ## Example Output
-After splitting `prova-2dia.pdf`:
+After splitting `my_book.pdf`:
 ```
-📂 data/output_pdfs/prova-2dia
- ┣ 01_nature_science.pdf
- ┗ 02_math.pdf
+📂 data/output_pdfs/my_book
+ ┣ 01_summary.pdf
+ ┗ 02_chapter_1.pdf
 ```
 
 ## Notes
